@@ -2,6 +2,9 @@ package com.example.wishlist
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
     lateinit var wishlist_items:ArrayList<Item>
@@ -11,29 +14,18 @@ class MainActivity : AppCompatActivity() {
         // Get the input and send the variable to the arraylist. Every time the button is pressed. Put the add function into the loop for adding items
         setContentView(R.layout.activity_main)
         wishlist_items = ArrayList()
-        wishlist_items.add(Item(name="input the name", price="input the double", store="input the store locator from the keyboard"))
-        wishlist_items.add(Item())
-        wishlist_items.add(Item())
-        wishlist_items.add(Item())
-        wishlist_items.add(Item())
-        wishlist_items.add(Item())
+        wishlist_items.add(Item(name="name", price=24.7, store="store link"))
+        wishlist_items.add(Item(name="n", price=25.7, store="store link 2"))
+        wishlist_items.add(Item(name="na", price=26.7, store="store link 3"))
 
-        class UserListActivity : AppCompatActivity() {
-            lateinit var wishlist: ArrayList<Item>
-            override fun onCreate(savedInstanceState: Bundle?) {
-                // ...
-                // Lookup the recyclerview in activity layout
-                val rvContacts = findViewById<View>(R.id.rvContacts) as RecyclerView
-                // Initialize contacts
-                contacts = Contact.createContactsList(20)
-                // Create adapter passing in the sample user data
-                val adapter = ContactsAdapter(contacts)
-                // Attach the adapter to the recyclerview to populate items
-                rvContacts.adapter = adapter
-                // Set layout manager to position the items
-                rvContacts.layoutManager = LinearLayoutManager(this)
-                // That's all!
-            }
-        }
+        val mainRv = findViewById<View>(R.id.mainRv) as RecyclerView
+
+        // Create adapter passing in the sample user data
+        val adapter = ItemAdapter(wishlist_items)
+        // Attach the adapter to the recyclerview to populate items
+        mainRv.adapter = adapter
+        // Set layout manager to position the items
+        mainRv.layoutManager = LinearLayoutManager(this)
+        // That's all!
     }
 }
