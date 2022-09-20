@@ -1,5 +1,5 @@
 package com.example.wishlist
 
-class Item(val name: String, val price: Double,  val store: String ) {
+class Item(val name: String, val price: String,  val store: String ) {
 
 }
