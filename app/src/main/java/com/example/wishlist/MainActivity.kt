@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
 
         wishlist_items = ArrayList()
-        wishlist_items.add(Item(name="name", price="24.7", store="store link"))
+        //wishlist_items.add(Item(name="name", price="24.7", store="store link"))
         //wishlist_items.add(Item(name="n", price="25.7", store="store link 2"))
         //CHECK IF THE LIST sending is WORKING
 
