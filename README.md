@@ -1,28 +1,9 @@
-# Android Project 2 - *Wishlist Tracker*
-
-Submitted by: **Saida Ibragimova**
+# *Wishlist Tracker*
 
 **Wishlist Tracker** is a wishlist app that helps the user keep track of what they want to buy.
 
-Time spent: **14** hours spent in total
-
-## Required Features
-
-The following **required** functionality is completed:
-
 - [X] **User can add an item to their wishlist**
 - [X] **User can see their list of items based on previously inputted items**
-
-The following **optional** features are implemented:
-
-- [ ] Wishlist app is 🎨 **customized** 🎨
-- [ ] User can delete an item by long pressing on the item
-- [ ] User can open an item's URL by clicking on the item
-
-The following **additional** features are implemented:
-
-* [ ] Create a priority flag for items on the shopping list
-* [ ] Have a delete icon / clear button to start the list from scratch
 
 
 ## Video Walkthrough
@@ -39,8 +20,6 @@ GIF created with LiceCap!
 [peek](https://github.com/phw/peek) for Linux. -->
 
 ## Notes
-
-Describe any challenges encountered while building the app:
 
 The main challenge was to understand the pipeline of the RecycleView. I took some time to figure out how Adapter is connected to the LayoutView, the MainActivity files, and how each of the Item classes could be integrated into a big picture. Additionally, it took me a while to understand the functionality of wrap_content vs match_parameter parameters in the .xml files.
 
