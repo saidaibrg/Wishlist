@@ -2,9 +2,6 @@
 
 **Wishlist Tracker** is a wishlist app that helps the user keep track of what they want to buy.
 
-- [X] **User can add an item to their wishlist**
-- [X] **User can see their list of items based on previously inputted items**
-
 
 ## Video Walkthrough
 
